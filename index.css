@@ -17,8 +17,8 @@ body{
     background: linear-gradient(to right, #020243, #4848e8); 
     border-bottom: 5px solid rgba(255, 221, 0, 0.763);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     width: 100%;
     padding: 40px 40px;
     position: relative;
@@ -50,7 +50,7 @@ body{
 .header h1 {
     color: whitesmoke;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 26px;
+    font-size: 24px;
     text-align: left;
     margin: 0;
 }
