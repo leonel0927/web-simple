@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cont_btn{
+    text-align: center;
+}
+body{
+    background-color:rgb(229, 233, 254);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    min-height: 100vh;
+}
+#motivo_eli{
+    width: 350px; 
+    height: 100px;
+}
+.header{
+ background-color: navy;
+    border-bottom: 10px solid yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 40px;
+}
+.header h1{
+    color: whitesmoke;
+    
+}
+.NA{
+    width:110px ;
+    height: 20px;
+    margin-bottom: 10px;
+}
+.btn-ejecutar_NA{
+    width: 100px;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color:rgba(225, 254, 63, 0.941);
+    border-radius: 5px;
+    border-color: rgba(208, 230, 43, 0.941);
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.btn-ejecutar_NA:hover{
+    background-color: white;
+    border-color: yellow;
+    color: black;
+}
+fieldset{
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    width: 450px;
+    padding: 40px;
+    margin: 30px auto;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+.formulario-NA legend{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color:rgb(144, 211, 238);
+    margin-bottom: 5px;
+    color:rgb(13, 82, 232);
+    text-align: center;
+    border-radius: 10px;
+}
+.formulario-NA{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.AA{
+    width:110px ;
+    height: 20px;
+    margin-bottom: 10px;
+}
+.formulario-AA{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.formulario-AA legend{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color:rgb(144, 211, 238);
+    margin-bottom: 5px;
+    color:rgb(13, 82, 232);
+    text-align: center;
+    border-radius: 10px;
+}
+.btn-ejecutar_AA{
+    width: 100px;
+    height: 30px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    background-color:rgba(225, 254, 63, 0.941);
+    border-radius: 5px;
+    border-color: rgba(208, 230, 43, 0.941);
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.btn-ejecutar_AA:hover{
+    background-color: white;
+    border-color: yellow;
+    color: black;
+}
+.EA{
+    width:110px ;
+    height: 20px;
+    margin-bottom: 10px;
+}
+.formulario-EA{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.formulario-EA legend{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color:rgb(144, 211, 238);
+    margin-bottom: 5px;
+    color:rgb(13, 82, 232);
+    text-align: center;
+    border-radius: 10px;
+}
+.btn-ejecutar_EA{
+    width: 100px;
+    height: 30px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    background-color:rgba(225, 254, 63, 0.941);
+    border-radius: 5px;
+    border-color: rgba(208, 230, 43, 0.941);
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.btn-ejecutar_EA:hover{
+    background-color: white;
+    border-color: yellow;
+    color: black;
+}

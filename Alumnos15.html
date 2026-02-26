@@ -3,65 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sistemas de Alumnos</title>
+    <link rel="stylesheet" href="Alumnos15.css">
 </head>
 <body>
-    <h1>SISTEMAS DE ALUMNOS</h1>
-    <h3>Nuevo Alumno</h3>
-    <label for="">Apellido 1:</label>
-    <div><input type="text" name="" id=""></div>
-    <label for="">Apellido 2:</label>
-    <div><input type="text" name="" id=""></div>
-    <label for="">Apellido Nombres:</label>
-    <div><input type="text" name="" id=""></div>
-    <label for="">Matricula:</label>
-    <div><input type="text" name="" id=""></div>
-    <label for="">Carrera:</label>
-    <select name="" id="">
-        <option value="">SOFTWARE</option>
-        <option value="">CIVIL</option>
-        <option value="">GEODESIA</option>
-        <option value="">PROCESOS</option>
-    </select>
-    <br>
-    <div>
-    <label for="">Genero:</label>
-    <input type="radio">
-    <label for="">H</label>
-    <input type="radio">
-    <label for="">M</label>
-    </div>
-    <div><button>Ejecutar</button></div>
-      <h3>Actualizar Alumno</h3>
-    <label for="">Apellido 1:</label>
-    <div><input type="text" name="" id=""></div>
-    <label for="">Apellido 2:</label>
-    <div><input type="text" name="" id=""></div>
-    <label for="">Apellido Nombres:</label>
-    <div><input type="text" name="" id=""></div>
-    <label for="">Matricula:</label>
-    <div><input type="text" name="" id=""></div>
-    <label for="">Carrera:</label>
-    <select name="" id="">
-        <option value="">SOFTWARE</option>
-        <option value="">CIVIL</option>
-        <option value="">GEODESIA</option>
-        <option value="">PROCESOS</option>
-    </select>
-    <br>
-    <div>
-    <label for="">Genero:</label>
-    <input type="radio">
-    <label for="">H</label>
-    <input type="radio">
-    <label for="">M</label>
-    </div>
-    <div><button>Ejecutar</button></div>    
-    <h3>Eliminar Alumno</h3>
-    <label for="">Matricula</label>
-    <div><input type="text" name="" id=""></div>
-        <br>
-    <textarea name="" id="" ></textarea>
-    <div><button>Ejecutar</button></div>
+    <header class="header">
+        <h1>SISTEMAS DE ALUMNOS</h1>
+    </header>
+
+    <form class="formulario-NA">
+        <fieldset>
+            <div><legend>Nuevo Alumno</legend></div>
+            
+            <div class="campo">
+                <label for="ap1_nuevo">Apellido 1:</label>
+                <input type="text" id="ap1_nuevo" class="NA">
+            </div>
+            
+            <div class="campo">
+                <label for="ap2_nuevo">Apellido 2:</label>
+                <input type="text" id="ap2_nuevo" class="NA">
+            </div>
+            
+            <div class="campo">
+                <label for="nom_nuevo">Nombres:</label>
+                <input type="text" id="nom_nuevo" class="NA">
+            </div>
+            
+            <div class="campo">
+                <label for="cuenta_nuevo">Numero de cuenta:</label>
+                <input type="text" id="cuenta_nuevo" class="NA">
+            </div>
+            <div class="campo">
+                <label for="grupo_nuevo">Grupo:</label>
+                <input type="text" id="nom_nuevo" class="NA">
+            </div>
+            <div class="campo">
+                <label for="carrera_act">Carrera:</label>
+                    <select id="carrera_act" class="NA">
+                        <option value="SOFTWARE">SOFTWARE</option>
+                        <option value="CIVIL">CIVIL</option>
+                        <option value="GEODESIA">GEODESIA</option>
+                        <option value="PROCESOS">PROCESOS</option>
+                    </select>
+            </div>
+            <div class="campo-genero">
+                <label>Genero:</label>
+                <input type="radio" name="gen_nuevo" id="h_nuevo"> <label for="h_nuevo">H</label>
+                <input type="radio" name="gen_nuevo" id="m_nuevo"> <label for="m_nuevo">M</label>
+            </div>
+            
+            <div class="cont_btn"><button type="submit" class="btn-ejecutar_NA">Ejecutar</button></div>
+        </fieldset>
+    </form>
+
+    <form class="formulario-AA">
+        <fieldset>
+            <div><legend>Actualizar Alumno</legend></div>
+            
+            <div class="campo">
+                <label for="ap1_act">Apellido 1:</label>
+                <input type="text" id="ap1_act" class="AA">
+            </div>
+            
+            <div class="campo">
+                <label for="ap2_act">Apellido 2:</label>
+                <input type="text" id="ap2_act" class="AA">
+            </div>
+            
+            <div class="campo">
+                <label for="nom_act">Nombres:</label>
+                <input type="text" id="nom_act" class="AA">
+            </div>
+            
+            <div class="campo">
+                <label for="mat_act">Numero de cuenta:</label>
+                <input type="text" id="mat_act" class="AA">
+            </div>
+            <div class="campo">
+                <label for="grupo_nuevo">Grupo:</label>
+                <input type="text" id="nom_nuevo" class="AA">
+            </div>
+            <div class="campo">
+                <label for="carrera_act">Carrera:</label>
+                    <select id="carrera_act" class="AA">
+                        <option value="SOFTWARE">SOFTWARE</option>
+                        <option value="CIVIL">CIVIL</option>
+                        <option value="GEODESIA">GEODESIA</option>
+                        <option value="PROCESOS">PROCESOS</option>
+                    </select>
+            </div>
+            
+            <div class="campo-genero">
+                <label>Genero:</label>
+                <input type="radio" name="gen_act" id="h_act"> <label for="h_act">H</label>
+                <input type="radio" name="gen_act" id="m_act"> <label for="m_act">M</label>
+            </div>
+            
+            <div class="cont_btn"><button type="submit" class="btn-ejecutar_AA">Ejecutar</button></div>
+        </fieldset>
+    </form> 
+
+    <form class="formulario-EA">
+        <fieldset>
+            <div><legend>Eliminar Alumno</legend></div>
+            
+            <div class="campo">
+                <label for="mat_eli">Numero de cuenta:</label>
+                <div><input type="text" id="mat_eli" class="EA"></div>
+            </div>
+            
+            <div class="campo">
+                <label for="motivo_eli">Motivo o Descripción:</label> 
+                <div class="desc"><textarea id="motivo_eli" class="EA"></textarea></div>
+            </div>
+            
+            <div class="cont_btn"><button type="submit" class="btn-ejecutar_EA">Ejecutar</button></div>
+        </fieldset>
+    </form>
+
 </body>
 </html>
