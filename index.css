@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color:rgb(229, 233, 254);
+    background-color:rgb(255, 255, 255);
     text-align: center;
 }
 .relleno{
@@ -14,19 +14,20 @@ body{
     color: rgb(0, 0, 0);
 }
 .header {
-    background-color: navy;
-    border-bottom: 10px solid yellow;
+    background: linear-gradient(to right, #020243, #4848e8); 
+    border-bottom: 5px solid rgba(255, 221, 0, 0.763);
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 20px 40px;
+    padding: 40px 40px;
+    position: relative;
 }
-
 .navh {
     display: flex;
     gap: 30px;
-    margin-left: auto;
+    position: absolute;
+    right: 100px;
 }
 
 .navh a { 
@@ -36,14 +37,20 @@ body{
     color: white;
     transition: 0.3s;
     font-weight: bold;
+    text-align: end;
 }
 
 .navh a:hover {
-    color: yellow;
+    background-color: rgba(255, 221, 0, 0.763);
+    color: rgb(224, 242, 255);
+    padding: 15px 20px;
+    border-radius: 5px;
 }
 
-h1 {
+.header h1 {
     color: whitesmoke;
-    font-family: 'Arial Black', sans-serif;
-    font-size: 24px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 26px;
+    text-align: center;
+    margin: 0;
 }

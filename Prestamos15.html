@@ -1,45 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sistema de Préstamos</title>
+    <link rel="stylesheet" href="Alumnos15.css">
 </head>
 <body>
-    <h1>SISTEMA DE PRESTAMOS</h1>
-    <h3>Nuevo Prestamo</h3>
-    <label for="">Matricula del Alumno:</label>
-    <div><input type="text" name="" id=""></div>
-    <label for="">Numero de serie:</label>
-    <div><input type="text" name="" id=""></div>
-    <label for="">Fecha de prestamo</label>
-    <div><input type="date"><input type="time" name="" id=""></div>
-    <label for="">Tipo de equipo:</label>
-    <div>
-    <select name="" id="">
-        <option value="">Proyector</option>
-        <option value="">Computador</option>
-    </select>
-    </div>
-    <label for="">Firma:</label>
-    <div><input type="file"></div>
-    <div><button>Ejecutar</button></div>
-    <h3>Recibir Prestamo</h3>
-    <label for="">Matricula</label>
-    <div><input type="text" name="" id=""></div>
-    <label for="">Numero de serie</label>
-    <div><input type="text" name="" id=""></div>
-    <label for="">Fecha de devolucion</label>
-    <div><input type="date"> <input type="time"></div>
-    <label for="">Firma</label>
-    <div><input type="file" name="" id=""></div>
-    <div><button>Ejecutar</button></div>
-    <h3>Rportar Prestamo</h3>
-    <label for="">Matricula del alumno</label>
-    <div><input type="text"></div>
-    <label for="">Numero de seria</label>
-    <div><input type="text" name="" id=""></div>
-    <textarea name="" id=""></textarea>
-    <div><button>Ejecutar</button></div>
+
+    <header class="header">
+        <h1>SISTEMA DE PRÉSTAMOS FIM</h1>
+        <nav class="navh">
+            <a href="index.html">SALIR</a>
+        </nav>
+    </header>
+
+    <form class="formulario-A">
+        <fieldset>
+            <div><legend>Nuevo Préstamo</legend></div>
+            
+            <div class="campo">
+                <label for="mat_nuevo">Matrícula del Alumno:</label>
+                <input type="text" id="mat_nuevo" class="A">
+            </div>
+            
+            <div class="campo">
+                <label for="serie_nuevo">Número de serie:</label>
+                <input type="text" id="serie_nuevo" class="A">
+            </div>
+            
+            <div class="campo">
+                <label>Fecha y Hora:</label>
+                <div class="desc">
+                    <input type="date" class="A">
+                    <input type="time" class="A">
+                </div>
+            </div>
+            
+            <div class="campo">
+                <label for="tipo_nuevo">Tipo de equipo:</label>
+                <select id="tipo_nuevo" class="A">
+                    <option value="Proyector">Proyector</option>
+                    <option value="Computador">Computador</option>
+                </select>
+            </div>
+            
+            <div class="campo">
+                <label for="firma_nuevo">Firma:</label>
+                <input type="file" id="firma_nuevo" class="A">
+            </div>
+            
+            <div class="cont_btn">
+                <button type="submit" class="btn-ejecutar_A">Ejecutar</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <form class="formulario-AC">
+        <fieldset>
+            <div><legend>Recibir Préstamo</legend></div>
+            
+            <div class="campo">
+                <label for="mat_recibir">Matrícula:</label>
+                <input type="text" id="mat_recibir" class="AC">
+            </div>
+            
+            <div class="campo">
+                <label for="serie_recibir">Número de serie:</label>
+                <input type="text" id="serie_recibir" class="AC">
+            </div>
+            
+            <div class="campo">
+                <label>Fecha y Hora:</label>
+                <div class="desc">
+                    <input type="date" class="AC">
+                    <input type="time" class="AC">
+                </div>
+            </div>
+            
+            <div class="campo">
+                <label for="firma_recibir">Firma:</label>
+                <input type="file" id="firma_recibir" class="AC">
+            </div>
+            
+            <div class="cont_btn">
+                <button type="submit" class="btn-ejecutar_AC">Ejecutar</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <form class="formulario-E">
+        <fieldset>
+            <div><legend>Reportar Préstamo</legend></div>
+            
+            <div class="campo">
+                <label for="mat_rep">Matrícula del alumno:</label>
+                <input type="text" id="mat_rep" class="E">
+            </div>
+            
+            <div class="campo">
+                <label for="serie_rep">Número de serie:</label>
+                <input type="text" id="serie_rep" class="E">
+            </div>
+            
+            <div class="campo">
+                <label for="motivo_eli">Descripción del reporte:</label>
+                <div class="desc">
+                    <textarea id="motivo_eli" class="E"></textarea>
+                </div>
+            </div>
+            
+            <div class="cont_btn">
+                <button type="submit" class="btn-ejecutar_E">Ejecutar</button>
+            </div>
+        </fieldset>
+    </form>
+
 </body>
 </html>

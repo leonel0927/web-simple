@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<headd>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistemas de Alumnos</title>
@@ -8,39 +8,42 @@
 </head>
 <body>
     <header class="header">
-        <h1>SISTEMAS DE ALUMNOS</h1>
+        <h1>SISTEMA INTEGRAL DE ALUMNOS</h1>
+        <nav class="navh">
+        <a href="index.html">SALIR</a>
+        </nav>
     </header>
 
-    <form class="formulario-NA">
+    <form class="formulario-A">
         <fieldset>
             <div><legend>Nuevo Alumno</legend></div>
             
             <div class="campo">
                 <label for="ap1_nuevo">Apellido 1:</label>
-                <input type="text" id="ap1_nuevo" class="NA">
+                <input type="text" id="ap1_nuevo" class="A">
             </div>
             
             <div class="campo">
                 <label for="ap2_nuevo">Apellido 2:</label>
-                <input type="text" id="ap2_nuevo" class="NA">
+                <input type="text" id="ap2_nuevo" class="A">
             </div>
             
             <div class="campo">
                 <label for="nom_nuevo">Nombres:</label>
-                <input type="text" id="nom_nuevo" class="NA">
+                <input type="text" id="nom_nuevo" class="A">
             </div>
             
             <div class="campo">
                 <label for="cuenta_nuevo">Numero de cuenta:</label>
-                <input type="text" id="cuenta_nuevo" class="NA">
+                <input type="text" id="cuenta_nuevo" class="A">
             </div>
             <div class="campo">
                 <label for="grupo_nuevo">Grupo:</label>
-                <input type="text" id="nom_nuevo" class="NA">
+                <input type="text" id="nom_nuevo" class="A">
             </div>
             <div class="campo">
                 <label for="carrera_act">Carrera:</label>
-                    <select id="carrera_act" class="NA">
+                    <select id="carrera_act" class="A">
                         <option value="SOFTWARE">SOFTWARE</option>
                         <option value="CIVIL">CIVIL</option>
                         <option value="GEODESIA">GEODESIA</option>
@@ -53,40 +56,40 @@
                 <input type="radio" name="gen_nuevo" id="m_nuevo"> <label for="m_nuevo">M</label>
             </div>
             
-            <div class="cont_btn"><button type="submit" class="btn-ejecutar_NA">Ejecutar</button></div>
+            <div class="cont_btn"><button type="submit" class="btn-ejecutar_A">Agregar</button></div>
         </fieldset>
     </form>
 
-    <form class="formulario-AA">
+    <form class="formulario-AC">
         <fieldset>
             <div><legend>Actualizar Alumno</legend></div>
             
             <div class="campo">
                 <label for="ap1_act">Apellido 1:</label>
-                <input type="text" id="ap1_act" class="AA">
+                <input type="text" id="ap1_act" class="AC">
             </div>
             
             <div class="campo">
                 <label for="ap2_act">Apellido 2:</label>
-                <input type="text" id="ap2_act" class="AA">
+                <input type="text" id="ap2_act" class="AC">
             </div>
             
             <div class="campo">
                 <label for="nom_act">Nombres:</label>
-                <input type="text" id="nom_act" class="AA">
+                <input type="text" id="nom_act" class="AC">
             </div>
             
             <div class="campo">
                 <label for="mat_act">Numero de cuenta:</label>
-                <input type="text" id="mat_act" class="AA">
+                <input type="text" id="mat_act" class="AC">
             </div>
             <div class="campo">
                 <label for="grupo_nuevo">Grupo:</label>
-                <input type="text" id="nom_nuevo" class="AA">
+                <input type="text" id="nom_nuevo" class="AC">
             </div>
             <div class="campo">
                 <label for="carrera_act">Carrera:</label>
-                    <select id="carrera_act" class="AA">
+                    <select id="carrera_act" class="AC">
                         <option value="SOFTWARE">SOFTWARE</option>
                         <option value="CIVIL">CIVIL</option>
                         <option value="GEODESIA">GEODESIA</option>
@@ -100,25 +103,25 @@
                 <input type="radio" name="gen_act" id="m_act"> <label for="m_act">M</label>
             </div>
             
-            <div class="cont_btn"><button type="submit" class="btn-ejecutar_AA">Ejecutar</button></div>
+            <div class="cont_btn"><button type="submit" class="btn-ejecutar_AC">Modificar</button></div>
         </fieldset>
     </form> 
 
-    <form class="formulario-EA">
+    <form class="formulario-E">
         <fieldset>
-            <div><legend>Eliminar Alumno</legend></div>
+            <div><legend>Elimiar Alumno</legend></div>
             
             <div class="campo">
                 <label for="mat_eli">Numero de cuenta:</label>
-                <div><input type="text" id="mat_eli" class="EA"></div>
+                <div><input type="text" id="mat_eli" class="E"></div>
             </div>
             
             <div class="campo">
                 <label for="motivo_eli">Motivo o Descripción:</label> 
-                <div class="desc"><textarea id="motivo_eli" class="EA"></textarea></div>
+                <div class="desc"><textarea id="motivo_eli" class="E"></textarea></div>
             </div>
             
-            <div class="cont_btn"><button type="submit" class="btn-ejecutar_EA">Ejecutar</button></div>
+            <div class="cont_btn"><button type="submit" class="btn-ejecutar_E">Elimiar</button></div>
         </fieldset>
     </form>
 

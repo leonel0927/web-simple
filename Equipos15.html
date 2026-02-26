@@ -3,48 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sistemas de Equipos</title>
+    <link rel="stylesheet" href="Alumnos15.css">
 </head>
 <body>
-    <h1>SISTEMAS DE EQUIPOS</h1>
-    <h3>Agregar Equipo</h3>
-    <label for="">Tipo de Equipo:</label>
-    <div>
-    <select name="" id="">
-            <option value="">Proyector</option>
-            <option value="">Computador</option>
-    </select>
-    </div>
-    <label for="">Numero de serie:</label>
-    <div><input type="text" name="" id="" size="15px"></div>
-    <label for="">Fecha de compra:</label>
-    <div><input type="date" name="" id=""></div>
-    <label for="">Factura:</label>
-    <div><input type="file" name="" id=""></div>
-    <br>
-    <div><button>Ejecutar</button></div>
-    <h3>Editar Equipo</h3>
-    <label for="">Tipo de Equipo:</label>
-    <div>
-    <select name="" id="">
-            <option value="">Proyector</option>
-            <option value="">Computador</option>
-    </select>
-    </div>
-    <label for="">Numero de serie:</label>
-    <div><input type="text" name="" id="" size="15px"></div>
-    <label for="">Fecha de compra:</label>
-    <div><input type="date" name="" id=""></div>
-    <label for="">Factura:</label>
-    <div><input type="file" name="" id=""></div>
-    <br>
-    <div><button>Ejecutar</button></div>
-    <h3>Eliminar Equipo</h3>
-    <label for="">Numero de serie:</label>
-    <div><input type="text"size="15px"></div>
-    <br>
-    <textarea name="" id=""></textarea>
-    <br>
-    <div><button>Ejecutar</button></div>
+    
+    <header class="header">
+        <h1>SISTEMAS DE EQUIPOS</h1>
+        <nav class="navh">
+            <a href="index.html">SALIR</a>
+        </nav>
+    </header>
+
+    <form class="formulario-A">
+        <fieldset>
+            <div><legend>Agregar Equipo</legend></div>
+            
+            <div class="campo">
+                <label for="tipo_nuevo">Tipo de Equipo:</label>
+                <select name="tipo_nuevo" id="tipo_nuevo" class="A">
+                    <option value="Proyector">Proyector</option>
+                    <option value="Computador">Computador</option>
+                </select>
+            </div>
+            
+            <div class="campo">
+                <label for="serie_nuevo">Numero de serie:</label>
+                <input type="text" id="serie_nuevo" class="A" size="15">
+            </div>
+            
+            <div class="campo">
+                <label for="fecha_nuevo">Fecha de compra:</label>
+                <input type="date" id="fecha_nuevo" class="A">
+            </div>
+            
+            <div class="campo">
+                <label for="factura_nuevo">Factura:</label>
+                <input type="file" id="factura_nuevo" class="A">
+            </div>
+            
+            <div class="cont_btn"><button type="submit" class="btn-ejecutar_A">Ejecutar</button></div>
+        </fieldset>
+    </form>
+
+    <form class="formulario-AC">
+        <fieldset>
+            <div><legend>Editar Equipo</legend></div>
+            
+            <div class="campo">
+                <label for="tipo_act">Tipo de Equipo:</label>
+                <select name="tipo_act" id="tipo_act" class="AC">
+                    <option value="Proyector">Proyector</option>
+                    <option value="Computador">Computador</option>
+                </select>
+            </div>
+            
+            <div class="campo">
+                <label for="serie_act">Numero de serie:</label>
+                <input type="text" id="serie_act" class="AC" size="15">
+            </div>
+            
+            <div class="campo">
+                <label for="fecha_act">Fecha de compra:</label>
+                <input type="date" id="fecha_act" class="AC">
+            </div>
+            
+            <div class="campo">
+                <label for="factura_act">Factura:</label>
+                <input type="file" id="factura_act" class="AC">
+            </div>
+            
+            <div class="cont_btn"><button type="submit" class="btn-ejecutar_AC">Ejecutar</button></div>
+        </fieldset>
+    </form>
+
+    <form class="formulario-E">
+        <fieldset>
+            <div><legend>Eliminar Equipo</legend></div>
+            
+            <div class="campo">
+                <label for="serie_eli">Numero de serie:</label>
+                <div><input type="text" id="serie_eli" class="E" size="15"></div>
+            </div>
+            
+            <div class="campo">
+                <label for="motivo_eli">Motivo o Descripción:</label>
+                <div class="desc"><textarea id="motivo_eli" class="E"></textarea></div>
+            </div>
+            
+            <div class="cont_btn"><button type="submit" class="btn-ejecutar_E">Ejecutar</button></div>
+        </fieldset>
+    </form>
+
 </body>
 </html>

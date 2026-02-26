@@ -1,59 +1,68 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.cont_btn{
-    text-align: center;
-}
-body{
-    background-color:rgb(229, 233, 254);
+
+body {
+    background-color: rgb(253, 253, 255);
     display: flex;
     flex-direction: column;
-    align-items: center; 
     min-height: 100vh;
+    width: 100%;
 }
 #motivo_eli{
-    width: 350px; 
-    height: 100px;
+    width: 300px;
+    height: 150px;
 }
-.header{
- background-color: navy;
-    border-bottom: 10px solid yellow;
+.header {
+    background: linear-gradient(to right, #020243, #4848e8);
+    border-bottom: 5px solid rgba(255, 221, 0, 0.763);
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 20px 40px;
+    padding: 40px 0;
+    position: relative;
+    flex-shrink: 0;
 }
-.header h1{
+
+.header h1 {
     color: whitesmoke;
-    
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 26px;
+    margin: 0;
+    max-width: 60%;
 }
-.NA{
-    width:110px ;
-    height: 20px;
-    margin-bottom: 10px;
+
+.navh {
+    display: flex;
+    position: absolute;
+    right: 40px; 
 }
-.btn-ejecutar_NA{
-    width: 100px;
-    height: 30px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    background-color:rgba(225, 254, 63, 0.941);
-    border-radius: 5px;
-    border-color: rgba(208, 230, 43, 0.941);
-    cursor: pointer;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+
+.navh a {
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: white;
+    transition: 0.3s;
     font-weight: bold;
 }
-.btn-ejecutar_NA:hover{
-    background-color: white;
-    border-color: yellow;
-    color: black;
+
+.navh a:hover {
+    background-color: rgba(255, 221, 0, 0.763); 
+    padding: 15px 10px;
+    border-radius: 5px;
 }
-fieldset{
+.formulario-A, .formulario-AC, .formulario-E {
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+}
+
+fieldset {
     background-color: white;
     border: none;
     border-radius: 15px;
@@ -62,96 +71,45 @@ fieldset{
     margin: 30px auto;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
 }
-.formulario-NA legend{
+legend {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: bold;
-    background-color:rgb(144, 211, 238);
-    margin-bottom: 5px;
-    color:rgb(13, 82, 232);
+    background-color: rgb(144, 211, 238);
+    margin-bottom: 20px;
+    color: rgb(13, 82, 232);
     text-align: center;
     border-radius: 10px;
+    width: 100%;
+    display: block;
+    padding: 5px 0;
 }
-.formulario-NA{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-}
-.AA{
-    width:110px ;
-    height: 20px;
+
+.A, .AC, .E {
+    width: 110px;
+    height: 25px;
     margin-bottom: 10px;
 }
-.formulario-AA{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-}
-.formulario-AA legend{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    background-color:rgb(144, 211, 238);
-    margin-bottom: 5px;
-    color:rgb(13, 82, 232);
+
+.cont_btn {
     text-align: center;
-    border-radius: 10px;
 }
-.btn-ejecutar_AA{
+
+.btn-ejecutar_A, .btn-ejecutar_AC, .btn-ejecutar_E {
     width: 100px;
     height: 30px;
     margin-top: 15px;
-    margin-bottom: 5px;
-    background-color:rgba(225, 254, 63, 0.941);
+    background-color: rgba(225, 254, 63, 0.941);
     border-radius: 5px;
-    border-color: rgba(208, 230, 43, 0.941);
+    border: 1px solid rgba(208, 230, 43, 0.941);
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: bold;
+    transition: 0.3s;
 }
-.btn-ejecutar_AA:hover{
-    background-color: white;
-    border-color: yellow;
-    color: black;
-}
-.EA{
-    width:110px ;
-    height: 20px;
-    margin-bottom: 10px;
-}
-.formulario-EA{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-}
-.formulario-EA legend{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    background-color:rgb(144, 211, 238);
-    margin-bottom: 5px;
-    color:rgb(13, 82, 232);
-    text-align: center;
-    border-radius: 10px;
-}
-.btn-ejecutar_EA{
-    width: 100px;
-    height: 30px;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    background-color:rgba(225, 254, 63, 0.941);
-    border-radius: 5px;
-    border-color: rgba(208, 230, 43, 0.941);
-    cursor: pointer;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-}
-.btn-ejecutar_EA:hover{
+
+.btn-ejecutar_A:hover, .btn-ejecutar_AC:hover, .btn-ejecutar_E:hover {
     background-color: white;
     border-color: yellow;
     color: black;
