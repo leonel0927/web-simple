@@ -12,9 +12,10 @@ header {
     display: flex;
     align-items: center; 
     padding: 15px 30px;
-    background: linear-gradient(to bottom, rgb(35, 35, 234), rgb(47, 75, 234));
+    background: linear-gradient(to bottom, rgb(16, 16, 141), rgb(28, 39, 98));
     width: 100%;
     color: white;
+    border-bottom: 8px solid rgb(141, 125, 5);
 }
 
 #logo {
